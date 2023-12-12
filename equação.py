@@ -18,7 +18,7 @@ def menu():
         input()
         menu()
 def eq1():
-    # linear equation solver
+    # linear equation solver / solução de equação linear
     co_a = float(input("digite o coeficiente A: "))
     co_b = float(input("digite o coeficiente B: "))
     r = (-co_b) / co_a
@@ -27,7 +27,7 @@ def eq1():
     menu()
 
 def eq2():
-    # quadratic equation solver
+    # quadratic equation solver / solução de equação quadrática
     co_a = float(input("digite o coeficiente A: "))
     co_b = float(input("digite o coeficiente B: "))
     co_c = float(input("digite o coeficiente C: "))
