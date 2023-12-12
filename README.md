@@ -1,3 +1,4 @@
+![ico](https://github.com/ImFenyx/Aleph-0-Project/assets/103691581/d7f6bce8-d252-475e-bcb3-9f3af6c84e2e)
 
 Project Aleph-0
 
