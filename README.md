@@ -20,4 +20,5 @@ Requirements:
 
 - Python 3
 - Windows
+  
 (Imprecise requirements because is not tested in other machines)
