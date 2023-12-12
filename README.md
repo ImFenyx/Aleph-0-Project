@@ -10,7 +10,7 @@ Functions done:
 - Drawing random numbers
 - Potentiation
 - First and second degree equations
-- Average speed calculation
+- Average speed calculation (partially)
 
 What I want to do:
 - Conversion of measures
@@ -20,5 +20,4 @@ Requirements:
 
 Python 3
 Windows
-
 (Imprecise requirements because is not tested in other machines)
