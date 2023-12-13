@@ -86,7 +86,7 @@ def vmcfinal():
         exit()
 
 def vmc():
-    desc = int(input("Você quer descobrir qual grandeza?:\n\n(1) Velocidade\n\n(2) Tempo\n\n(3) Distância\n\n-> "))
+    desc = int(input("Você quer descobrir qual grandeza?:\n\n(1) Velocidade\n\n(2) Tempo\n\n(3) Distância (em breve)\n\n-> "))
     if desc == 1:
         os.system('cls')
         tv = float(input("qual o tempo em segundos?\n\n-> "))
@@ -94,6 +94,14 @@ def vmc():
         vrms = (tv / dv)
         vrkmh = (vrms * 3.6)
         print ("A resposta em m/s é:", vrms,"\nAgora em Km/h é:", vrkmh)
+        vmcfinal()
+    if desc == 2:
+        dt = float(input("qual a velocidade em m/s?\n\n-> "))
+        vt = float(input("Qual a distancia em metros?\n\n-> "))
+        trs = (vt / dt)
+        trm = (trs / 60)
+        trh = (trs / 3600)
+        print (f"A resposta em segundos é: {trs}\nEm minutos é: {trm}\nAgora em horas é: {trh}")
         vmcfinal()
 
 def eq1():
