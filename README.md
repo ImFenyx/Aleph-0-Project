@@ -10,7 +10,7 @@ For now it's being done in a terminal, but I intend to recreate it in a GUI with
 
 **The project is only in Portuguese at the moment, but I intend to add the English language.**
 
-Functions done:
+Features:
 - Drawing random numbers
 - Potentiation
 - First and second degree equations
