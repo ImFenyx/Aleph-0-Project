@@ -8,6 +8,8 @@ Its function is to be a tool for solving basic, generally mathematical problems 
 
 For now it's being done in a terminal, but I intend to recreate it in a GUI with explanations of the solution to the problem so as not only to show the answer, but also to teach how the solution works.
 
+**The project is only in Portuguese at the moment, but I intend to add the English language.**
+
 Functions done:
 - Drawing random numbers
 - Potentiation
