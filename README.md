@@ -14,7 +14,7 @@ Features:
 - Drawing random numbers
 - Potentiation
 - First and second degree equations
-- Average speed calculation (partially)
+- Average speed calculation + time in seconds, minutes, and hours for speed and distance (partially)
 
 What I want to do:
 - Conversion of measures
