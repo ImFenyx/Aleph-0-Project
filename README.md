@@ -12,9 +12,9 @@ For now it's being done in a terminal, but I intend to recreate it in a GUI with
 
 Features:
 - Drawing random numbers
-- Potentiation
+- Potentiation / Exponentiation
 - First and second degree equations
-- Average speed calculation + time in seconds, minutes, and hours for speed and distance (partially)
+- Average speed calculation + Time in seconds, minutes, and hours + Distance in meters and kilometers
 
 What I want to do:
 - Conversion of measures
