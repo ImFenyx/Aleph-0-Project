@@ -1,44 +1,30 @@
-# coding=ansi
+# Project of basic mathematical tools with or without formulas.
+# It will be my first project to challenge myself.
 
-'''
-    Atualizações:
-    Correção de português
-    Corrigido bugs de consistência como falta de limpeza de tela em certas ocasiões
-    Adicionado opções de explicação em todas as soluções
-    Resolvido crash caso não escreva nada no menu
-'''
-
-    # Project of basic mathematical tools with or without formulas.
-    # It will be my first project to challenge myself.
-
-    # Projeto de ferramentas matemáticas básicas tendo ou não fórmulas
-    # Será meu primeiro projeto a ser feito para me desafiar
+# Projeto de ferramentas matemáticas básicas tendo ou não fórmulas
+# Será meu primeiro projeto a ser feito para me desafiar
 
 import os
-import random
 import math
+import funcmath
+
+MSGW = '\n\n################################\n\n>  Project Aleph-0 (Prototype) <\n\n################################\n\n'
+MSG1 = 'Escolha as funções do projeto:\n(1) Número aleatório\n\n(2) Potenciação\n\n(3) Velocidade média constante (em breve)\n\n(4) Equação do primeiro grau\n\n(5) Equação do segundo grau\n\n->'
 
 # limpa a tela
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def menu():
-    clear_screen()
-    print ("\n######################################\n\n >  Project Aleph-0 (prototype) <\n\n######################################")
+    print(MSGW) # Welcome message
+    opcao_menu = input(MSG1)
     
-    print ("\n\nVamos começar")
-    opcao_menu = input("\n\nEscolha as funções do projeto ^^ :\n\n(1) Número aleatório\n\n(2) Potenciação\n\n(3) Velocidade média constante (em breve)\n\n(4) Equação do primeiro grau\n\n(5) Equação do segundo grau\n\n-> ")
-    if not opcao_menu:
-        print ("\n\nVocê não digitou nada")
-        input()
+    if opcao_menu == '1':
         clear_screen()
-        menu()
-    elif opcao_menu == '1':
-        clear_screen()
-        randomfunc()
+        print(funcmath.randomfunc())
     elif opcao_menu == '2':
         clear_screen()
-        ptc_func()
+        print(funcmath.ptc())
     elif opcao_menu == '3':
         clear_screen()
         vmc_func()
@@ -49,85 +35,8 @@ def menu():
         clear_screen()
         eq2()
     else:
-        print ("Para com isso cara")
-        input()
-        clear_screen()
+        print ('Opção inválida.')
         menu()
-
-def randomfunc():
-
-    # Random numbers programming
-
-    # Programação de números aleatórios
-
-    rm1 = int(input("\n\nQual número mínimo para escolher?\n\n-> "))
-    rm2 = int(input("\n\nQual número máximo para escolher?\n\n-> "))
-    print(f"\n\nEu escolho:\n-> {random.randint(rm1, rm2)}")
-    rmopcao = input("\n\nQuer continuar?\n\n(1) Sim\n\n(2) Voltar para o menu\n\n(3) Sair\n\n-> ")
-    if not rmopcao:
-        print ("\n\nVocê não digitou nada")
-        input()
-        clear_screen()
-        randomfunc()
-
-    elif rmopcao == '1':
-        clear_screen()
-        randomfunc()
-    elif rmopcao == '2':
-        clear_screen()
-        menu()
-    elif rmopcao == '3':
-         exit()
-    else:
-        input("\n\nvocê é muito burro cara")
-        randomfunc()
-
-def ptc_func():
-
-    # Potentiation programming
-
-    # Programação de potenciação
-    try:
-        ptcbase = float(input("\nqual o número base?\n\n-> "))
-        ptcexp = float(input("\nqual o expoente?\n\n-> "))
-        ptcbase_exp = (ptcbase ** ptcexp)
-        print (f"\n\nA resposta é: {ptcbase_exp}")
-    except OverflowError:
-        print('O valor informado é muito grande.')
-    ptcfinal = input("\n\nQuer continuar?\n\n(1) Sim\n\n(2) Voltar para o menu\n\n(3) Sair\n\n(4) Me explique\n\n-> ")
-    if not ptcfinal:
-        print ("\n\nVocê não digitou nada")
-        input()
-        clear_screen()
-        ptc_func()
-    elif ptcfinal == '1':
-        clear_screen()
-        ptc_func()
-    elif ptcfinal == '2':
-        clear_screen()
-        menu()
-    elif ptcfinal == '3':
-        exit()
-    elif ptcfinal == '4':
-        clear_screen()
-        calculo = str(ptcbase)
-        for i in range(int(ptcexp) - 1):
-            calculo += " * " + str(ptcbase)
-        print(f"Simples! Na potenciação, a base que você escolheu é multiplicada por si mesma e o expoente são as vezes que a base é multiplicada.\n\nExemplo: {calculo}")
-        input()
-        clear_screen()
-        ptcfinal = input("\n\nQuer continuar?\n\n(1) Sim\n\n(2) Voltar para o menu\n\n(3) Sair\n\n-> ")
-        if ptcfinal == '1':
-            clear_screen()
-            ptc_func()
-        elif ptcfinal == '2':
-            clear_screen()
-            menu()
-        elif ptcfinal == '3':
-            exit()
-        else:
-            input("\n\nvocê é muito burro cara")
-            exit()
 
 def vmc_func():
 
