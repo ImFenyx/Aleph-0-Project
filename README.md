@@ -23,7 +23,5 @@ What I want to do:
 Requirements:
 
 - Python 3 or newer
-- Windows 10+
-- (Probably works with Windows 7, but has not been tested)
   
 (Imprecise requirements because is not tested in other machines)
