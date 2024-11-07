@@ -1,5 +1,6 @@
 ![ico](https://github.com/ImFenyx/Aleph-0-Project/assets/103691581/a7f1bd9f-32a5-4f5e-af76-9c2d718166a7)
 
+# DISCONTINUED
 
 Project Aleph-0
 
